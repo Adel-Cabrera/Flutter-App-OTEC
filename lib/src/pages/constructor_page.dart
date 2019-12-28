@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:otec_concepcion_capacitacion/src/models/areas_model.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+import 'contacto_page.dart';
+
 class ConstructorPage extends StatefulWidget {
   final int index;
   final int args;
@@ -29,7 +31,19 @@ class _ConstructorPageState extends State<ConstructorPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton.extended(
+        heroTag: "btn3",
+        icon: Icon(Icons.monetization_on),
+        backgroundColor: AreasPage.color(widget.args),
+        onPressed: () {
+          Navigator.of(context).pop();
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => ContactoPage()));
+        },
+        label: Text('Comprar curso'),
+      ),
       appBar: AppBar(
+        backgroundColor: AreasPage.color(widget.args),
         title: Text(
           '${AreasPage.listadoTotal[widget.args][widget.index]}',
           style: TextStyle(fontSize: 14.0),

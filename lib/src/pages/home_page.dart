@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:otec_concepcion_capacitacion/src/widgets/card_swipper.dart';
 import 'contacto_page.dart';
 import 'about_page.dart';

@@ -29,7 +29,7 @@ class _ContactoPageState extends State<ContactoPage> {
           ),
           SizedBox(height: 30.0),
           Text(
-            'Has click y conversemos por:',
+            'Para mayor información, elige una opción y has click:',
             style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),

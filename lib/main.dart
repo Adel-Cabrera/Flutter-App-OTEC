@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:otec_concepcion_capacitacion/src/pages/home_page.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 void main() {
+//  SystemChrome.setEnabledSystemUIOverlays([]);
   runApp(new MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: new ThemeData(
